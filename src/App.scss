@@ -1,0 +1,66 @@
+@use 'util';
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+div.container {
+  padding-bottom: 4rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.12);
+  @include util.BoxShadow(8);
+}
+
+nav.bg-dark {
+  @include util.BoxShadow(24);
+  background-color: rgba(255, 255, 255, 0.16)!important;
+}
+
+body {
+  background-color: #121212;
+}
+
+.row>* {
+  padding: calc(var(--bs-gutter-x)/ 2);
+}
+
+div.row div.col p {
+  color: #FFFFFF;
+  opacity: 60%;
+}

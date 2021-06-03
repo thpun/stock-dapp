@@ -1,0 +1,24 @@
+@use '../../util';
+
+div.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  @include util.BoxShadow(1);
+  color: #FFFFFF;
+  opacity: 87%;
+}
+
+span.qty {
+  text-align: right;
+}
+
+p.card-text.de {
+  height: 8rem;
+}
+
+p.card-text.aid {
+  opacity: 60%;
+}
+
+div.card.disabled {
+  opacity: 38%
+}
