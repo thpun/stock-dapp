@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "homepage": ".",
   "dependencies": {
     "@apollo/client": "^3.3.19",
     "@graphql-tools/schema": "^7.1.5",
