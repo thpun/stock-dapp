@@ -4,7 +4,7 @@ div.card {
   background-color: rgba(255, 255, 255, 0.05);
   @include util.BoxShadow(1);
   color: #FFFFFF;
-  opacity: 87%;
+  opacity: 0.87;
 }
 
 span.qty {
@@ -16,9 +16,9 @@ p.card-text.de {
 }
 
 p.card-text.aid {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 div.card.disabled {
-  opacity: 38%
+  opacity: 0.38;
 }
