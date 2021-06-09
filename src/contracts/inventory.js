@@ -13,6 +13,11 @@ export const abi = [
       },
       {
         "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
         "name": "description",
         "type": "string"
       },
@@ -59,6 +64,24 @@ export const abi = [
       }
     ],
     "name": "updateAvailability",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "category",
+        "type": "string"
+      }
+    ],
+    "name": "updateCategory",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -127,6 +150,11 @@ export const abi = [
       },
       {
         "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
         "name": "description",
         "type": "string"
       },
@@ -139,6 +167,11 @@ export const abi = [
         "internalType": "bool",
         "name": "available",
         "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "updateTime",
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",

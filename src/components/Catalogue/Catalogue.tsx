@@ -8,7 +8,8 @@ const GET_CATALOGUE = gql`
             name
             description
             stock
-            available        
+            available
+            updateTime
         }
     }
 `;

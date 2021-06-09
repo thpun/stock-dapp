@@ -12,7 +12,11 @@ span.qty {
 }
 
 p.card-text.de {
-  height: 8rem;
+  height: 125px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
 
 p.card-text.aid {
