@@ -6,7 +6,6 @@ const convertDateTime = (date: string): string => {
 };
 
 export function CatalogueItem(props: CatalogueItemProps) {
-    console.log(props.updateTime, typeof props.updateTime);
     return (
         <div className={"col-lg-4 col-md-6 col-sm-12 col-xs-12"}>
             <div className={`card ${props.available ? "" : "disabled"}`}>
