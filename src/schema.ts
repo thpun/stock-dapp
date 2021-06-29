@@ -1,5 +1,5 @@
 import {makeExecutableSchema} from '@graphql-tools/schema';
-import {web3, InventoryABI} from './contracts';
+import {InventoryInstance} from './contracts';
 import {GraphQLTimestamp} from "./scalars/Timestamp";
 
 const schema = `
@@ -38,7 +38,7 @@ const resolvers = {
     Catalogue: {
         allItems: async () => {
             // @ts-ignore
-            const inventory = new web3.eth.Contract(InventoryABI, process.env.REACT_APP_INVENTORY_CONTRACT);
+            const inventory = InventoryInstance;
 
             const items = [];
             for (let i = 0; i < await inventory.methods.indexCount().call(); i++) {
